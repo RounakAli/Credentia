@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+
+        android:layout_gravity="center"
+        app:boxStrokeColor="@color/green"
+        app:hintTextColor="@color/green"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColorHint="@color/green"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUsername"
+            android:hint="Enter Your Name.." />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:boxStrokeColor="@color/green"
+        android:layout_marginTop="15dp"
+       app:hintTextColor="@color/green"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColorHint="@color/green"
+            android:id="@+id/etUseremail"
+
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email.." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        app:boxStrokeColor="@color/green"
+        app:hintTextColor="@color/green"
+        android:layout_marginTop="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColorHint="@color/green"
+            android:id="@+id/about"
+            android:layout_height="wrap_content"
+            android:hint="Tell Me About Yourself..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="157dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/grey"
+
+
+        android:text="Upload"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="138dp"
+
+        android:layout_height="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:text="SUBMIT"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
